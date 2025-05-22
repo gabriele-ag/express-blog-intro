@@ -4,7 +4,7 @@
   "description": "Esercizio blog intro",
   "main": "app.js",
   "scripts": {
-    "dev": "node --watch app.js"
+    "dev": "node app.js"
   },
   "repository": {
     "type": "git",

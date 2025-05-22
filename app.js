@@ -22,6 +22,7 @@ app.get("/bacheca", (req, res) => {
     const resData = {
         data: posts,
         success: true,
+        count: posts.length
     }
 
     res.json(resData)
