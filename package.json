@@ -1,0 +1,23 @@
+{
+  "name": "express-blog-intro",
+  "version": "1.0.0",
+  "description": "Esercizio blog intro",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabriele-ag/express-blog-intro.git"
+  },
+  "type": "module",
+  "author": "Gabriele Ardizzone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabriele-ag/express-blog-intro/issues"
+  },
+  "homepage": "https://github.com/gabriele-ag/express-blog-intro#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
