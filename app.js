@@ -6,6 +6,40 @@ const app = express()
 const port = 3000
 
 
+
+const post = [
+    {
+        title: "Fine di un viaggio: il buco nero che rimane",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "./public/20250421212343.png",
+        tags: ["#baldursgate", "#viaggio", "#dnd", "#gdr", "#videogiochi"]
+    },
+    {
+        title: "Post-game: voglia di uscire, esplorare e conoscere il mondo che ci circonda",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "./public/20250421212343.png",
+        tags: ["#zelda", "#esplorare", "#scoperta", "#fuoricasa", "#videogiochi"]
+    },
+    {
+        title: "Apatia videoludica: bisogno di cambiamento o semplice stop?",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "./public/20250421212343.png",
+        tags: ["#emozioni", "#apatia", "#cambiamento", "#stimoli", "#videogiochi"]
+    },
+    {
+        title: "Quarta parete: rompere i confini di separazione tra utente e media",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "./public/20250421212343.png",
+        tags: ["#quartaparete", "#oltrelimite", "#media", "#utente", "#comunicazione"]
+    },
+    {
+        title: "Massima libertà: il complesso sviluppo dietro gli immersive-sim",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        img: "./public/20250421212343.png",
+        tags: ["#immersivesim", "#sviluppo", "#codice", "#libertà", "#videogiochi"]
+    }
+]
+
 app.get("/", (req, res) => {
     const resData = {
         data: "Server del mio blog"
@@ -14,13 +48,9 @@ app.get("/", (req, res) => {
     res.json(resData)
 })
 
-const post = [{
-    title: "Fine di un viaggio: il buco nero che rimane",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    img: "./public/20250421212343.png",
-    tags: ["#baldursgate", "viaggio", "dnd", "videogiochi", "gdr"]
-}
-]
+app.get("/bacheca", (req, res) => {
+    
+})
 
 app.listen(port, () => {
     console.log("Server in ascolto");
